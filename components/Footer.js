@@ -17,31 +17,31 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-16 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div className="container mx-auto px-4 py-12 max-w-7xl sm:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 sm:gap-12 sm:mb-12">
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <BsStarFill className="text-3xl text-yellow-400 animate-pulse" />
-              <h3 className="text-2xl font-display font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+              <BsStarFill className="text-2xl text-yellow-400 animate-pulse sm:text-3xl" />
+              <h3 className="text-xl font-display font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent sm:text-2xl">
                 Divine Blessings
               </h3>
             </div>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
               Spreading love, positivity, and spiritual inspiration daily. Join our community of believers.
             </p>
             {/* Social Icons */}
-            <div className="flex space-x-4 pt-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+            <div className="flex space-x-3 pt-4 sm:space-x-4">
+              <a href="#" className="w-8 h-8 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 sm:w-10 sm:h-10" aria-label="Facebook">
                 <BsFacebook />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+              <a href="#" className="w-8 h-8 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 sm:w-10 sm:h-10" aria-label="Instagram">
                 <BsInstagram />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+              <a href="#" className="w-8 h-8 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 sm:w-10 sm:h-10" aria-label="Twitter">
                 <BsTwitter />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110">
+              <a href="#" className="w-8 h-8 bg-white/10 hover:bg-purple-600 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 sm:w-10 sm:h-10" aria-label="Pinterest">
                 <BsPinterest />
               </a>
             </div>
@@ -49,28 +49,28 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-bold mb-4 flex items-center space-x-2">
+            <h4 className="text-base font-bold mb-3 flex items-center space-x-2 sm:text-lg sm:mb-4">
               <BsStarFill className="text-yellow-400 text-sm" />
               <span>Quick Links</span>
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="/" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/about" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/contact" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/privacy" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Privacy Policy
                 </Link>
               </li>
@@ -79,28 +79,28 @@ export default function Footer() {
 
           {/* Categories */}
           <div>
-            <h4 className="text-lg font-bold mb-4 flex items-center space-x-2">
+            <h4 className="text-base font-bold mb-3 flex items-center space-x-2 sm:text-lg sm:mb-4">
               <BsStarFill className="text-yellow-400 text-sm" />
               <span>Categories</span>
             </h4>
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="/blog/category/morning-blessings" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/blog/category/morning-blessings" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Morning Blessings
                 </Link>
               </li>
               <li>
-                <Link href="/blog/category/birthday-blessings" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/blog/category/birthday-blessings" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Birthday Blessings
                 </Link>
               </li>
               <li>
-                <Link href="/blog/category/prayers" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/blog/category/prayers" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Daily Prayers
                 </Link>
               </li>
               <li>
-                <Link href="/blog/category/inspirational" className="text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <Link href="/blog/category/inspirational" className="text-gray-300 hover:text-purple-400 transition-colors duration-300 text-sm sm:text-base">
                   Inspirational
                 </Link>
               </li>
@@ -109,22 +109,23 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h4 className="text-lg font-bold mb-4 flex items-center space-x-2">
+            <h4 className="text-base font-bold mb-3 flex items-center space-x-2 sm:text-lg sm:mb-4">
               <BsStarFill className="text-yellow-400 text-sm" />
               <span>Daily Blessings</span>
             </h4>
-            <p className="text-gray-300 mb-4 text-sm">
+            <p className="text-gray-300 mb-3 text-xs sm:mb-4 sm:text-sm">
               Subscribe to receive daily blessings in your inbox
             </p>
-            <form className="space-y-3">
+            <form className="space-y-2 sm:space-y-3">
               <input
                 type="email"
                 placeholder="Your email"
-                className="w-full px-4 py-2.5 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/50 transition-all duration-300"
+                className="w-full px-3 py-2 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-300 focus:outline-none focus:border-purple-400 focus:ring-2 focus:ring-purple-400/50 transition-all duration-300 text-sm sm:px-4 sm:py-2.5 sm:text-base"
+                aria-label="Email for newsletter subscription"
               />
               <button
                 type="submit"
-                className="w-full px-6 py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 shadow-lg"
+                className="w-full px-4 py-2 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg font-bold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 hover:scale-105 shadow-lg text-sm sm:px-6 sm:py-2.5 sm:text-base"
               >
                 Subscribe
               </button>
@@ -133,14 +134,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-white/10">
-          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-            <p className="text-gray-300 text-sm flex items-center space-x-2">
+        <div className="pt-6 border-t border-white/10 sm:pt-8">
+          <div className="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+            <p className="text-gray-300 text-xs flex items-center space-x-1 sm:text-sm sm:space-x-2">
               <span>© {currentYear} Divine Blessings. Made with</span>
-              <BsHeartFill className="text-pink-500 animate-pulse" />
+              <BsHeartFill className="text-pink-500 animate-pulse text-xs sm:text-sm" />
               <span>and Faith</span>
             </p>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-300 text-xs sm:text-sm">
               Designed by{' '}
               <span className="text-purple-400 font-semibold">Your Name</span>
             </p>
